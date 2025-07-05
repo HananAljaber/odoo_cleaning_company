@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="cleaning_company.list">
+      <field name="name">cleaning_company list</field>
+      <field name="model">cleaning_company.cleaning_company</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="cleaning_company.action_window">
+      <field name="name">cleaning_company window</field>
+      <field name="res_model">cleaning_company.cleaning_company</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="cleaning_company.action_server">
+      <field name="name">cleaning_company server</field>
+      <field name="model_id" ref="model_cleaning_company_cleaning_company"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="cleaning_company" id="cleaning_company.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="cleaning_company.menu_1" parent="cleaning_company.menu_root"/>
+    <menuitem name="Menu 2" id="cleaning_company.menu_2" parent="cleaning_company.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="cleaning_company.menu_1_list" parent="cleaning_company.menu_1"
+              action="cleaning_company.action_window"/>
+    <menuitem name="Server to list" id="cleaning_company" parent="cleaning_company.menu_2"
+              action="cleaning_company.action_server"/>
+-->
+  </data>
+</odoo>
