@@ -60,7 +60,7 @@ It provides a complete workflow starting from receiving customer orders, managin
 Developed by: **Hanan Aljaber**  
 تم تطويره بواسطة: **حنان الجابر**
 
-📧 Contact | للتواصل: [ضيفي بريدك هنا]
+
 
 ---
 
